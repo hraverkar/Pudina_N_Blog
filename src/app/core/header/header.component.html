@@ -1,0 +1,23 @@
+<header class="header">
+    <div class="navigation">
+        <a class="logo" (click)="navigateTo('home')">{{ BasicInformation?.title }}</a>
+        <ul class="menu">
+            <li class="menu__entry"><a (click)="navigateTo('resume')">Resume</a></li>
+            <li class="menu__entry"><a (click)="navigateTo('blog')">Blog</a></li>
+        </ul>
+    </div>
+    <ul class="social-links">
+        <a class="social-links__entry" target="_blank" tooltip="hello" (click)="clickSocialMedia('email')">
+            <i class="fa-solid fa-square-envelope"></i>
+        </a>
+        <a class="social-links__entry" target="_blank" (click)="clickSocialMedia('github')">
+            <i class="fa-brands fa-square-github"></i>
+        </a>
+        <a class="social-links__entry" target="_blank" (click)="clickSocialMedia('linkedin')">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="social-links__entry" target="_blank" (click)="clickSocialMedia('google')">
+            <i class="fa-brands fa-google"></i>
+        </a>
+    </ul>
+</header>
