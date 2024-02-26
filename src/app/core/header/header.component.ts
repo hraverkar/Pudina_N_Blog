@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { BasicInfoService } from '../../services/basic-info.service';
 import { IbasicInforamtion } from '../../interface/ibasic-inforamtion';
 import { Router } from '@angular/router';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [MatTooltipModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -63,6 +64,7 @@ export class HeaderComponent implements OnInit {
     this.basicInformationService.readBasicInformation().subscribe((res) => {
       if (res !== undefined || res !== null) {
         this.BasicInformation = res;
+        this.basicInformationService.generateSelectedData(this.BasicInformation);
       }
     });
   }

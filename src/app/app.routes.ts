@@ -2,24 +2,27 @@ import { Routes } from '@angular/router';
 import { BlogComponent } from './component/blog/blog.component';
 import { ResumeComponent } from './component/resume/resume.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
-import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
+import { PostsComponent } from './component/posts/posts.component';
 
 export const routes: Routes = [
 
     {
-        path: 'blog', component: BlogComponent
+        path: 'blog', component: BlogComponent, title: 'Pudina N Blog'
     },
     {
-        path: 'resume', component: ResumeComponent
+        path: 'resume', component: ResumeComponent, title: 'Pudina N Resume'
     },
     {
-        path: 'home', component: HomeComponent
+        path: 'home', component: HomeComponent, title: 'Pudina N'
     },
     {
-        path: '', component: HomeComponent
-    }
+        path: '', component: HomeComponent, title: 'Pudina N'
+    },
     // {
-    //     path: '**', component: NotFoundComponent
-    // }
+    //     path: '**', component: NotFoundComponent, title: 'Pudina N - Page Not Found'
+    // },
+    {
+        path: 'posts/:article', component: PostsComponent
+    },
 ];

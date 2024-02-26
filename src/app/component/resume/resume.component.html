@@ -1,1 +1,20 @@
-<p>resume works!</p>
+<h1 class="page-title">
+    <div class="page-title__text">{{ resumeBasicInformation?.page_title }}</div>
+    <div class="page-title__subtitle">{{ resumeBasicInformation?.page_subTitle }}</div>
+</h1>
+
+<p>
+    <span class="donwload-position">
+        <i class="fa-solid fa-download" (click)="onDonwloadResumeClick()" matTooltip={{resumeBasicInformation?.donwloadResume}}></i>
+    </span>
+    <br>
+</p>
+
+<div class="resume-details-position">
+    <h3 id="skills">Work Experience </h3>
+    <p>
+        <code class="language-plaintext highlighter-rouge">
+        hisdfhdshfsdhishfiohihidshiodshfiudshfuidshfuidshfui
+    </code>
+    </p>
+</div>

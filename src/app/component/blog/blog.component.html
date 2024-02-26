@@ -1,1 +1,13 @@
-<p>blog works!</p>
+<h1 class="page-title">
+    <div class="page-title__text">{{ postBasicInformation?.page_title }}</div>
+    <div class="page-title__subtitle">{{ postBasicInformation?.page_subTitle }}</div>
+</h1>
+
+
+
+<div class="links">
+    <a [routerLink]="['/posts/chocklaterecipe']" style="margin-bottom:24px">Chocolate Cheesecake Recipe >></a>
+    <a [routerLink]="['/posts/chocklaterecipe']" style="margin-bottom:24px">Strawberry Cheesecake Recipe>></a>
+    <a [routerLink]="['/posts/chocklaterecipe']" style="margin-bottom:24px">Caramel Cheesecake Recipe >></a>
+    <a [routerLink]="['/posts/newData']" style="margin-bottom:24px">NewData</a>
+</div>

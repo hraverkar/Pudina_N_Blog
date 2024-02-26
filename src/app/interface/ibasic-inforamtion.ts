@@ -4,12 +4,6 @@ export interface IbasicInforamtion {
     authorGithub: string;
     authorLinkedin: string;
     authorGoogle: string;
-
-    //    "title": "TextError N Blogs",
-    //     "author": {
-    //         "email": "harshal.raverkar@gmail.com",
-    //         "github": "hraverkar",
-    //         "linkedin": "/in/hraverkar",
-    //         "google": "http://surl.li/qwtcc"
-    //     }
+    page_title: string;
+    page_subTitle: string;
 }
