@@ -1,13 +1,42 @@
 <h1 class="page-title">
-    <div class="page-title__text">{{ postBasicInformation?.page_title }}</div>
-    <div class="page-title__subtitle">{{ postBasicInformation?.page_subTitle }}</div>
+  <div class="page-title__text">{{ postBasicInformation?.page_title }}</div>
+  <div class="page-title__subtitle">{{ postBasicInformation?.page_subTitle }}</div>
 </h1>
 
+<div>
+  <h4 class="post-teaser__month">
+    <strong>- - - - - Tech - - - - - </strong>
+  </h4>
 
+  <ul class="list-posts">
+    <li class="post-teaser" *ngFor="let post of generalPost?.posts">
+      <a [routerLink]="['/posts', post.postName]">
+        <span class="post-teaser__title">
+          {{ post?.postTitle }}
+        </span>
+        <span class="post-teaser__date">
+          {{ post?.postDate }}
+        </span>
+      </a>
+    </li>
+  </ul>
+  <br>
 
-<div class="links">
-    <a [routerLink]="['/posts/chocklaterecipe']" style="margin-bottom:24px">Chocolate Cheesecake Recipe >></a>
-    <a [routerLink]="['/posts/chocklaterecipe']" style="margin-bottom:24px">Strawberry Cheesecake Recipe>></a>
-    <a [routerLink]="['/posts/chocklaterecipe']" style="margin-bottom:24px">Caramel Cheesecake Recipe >></a>
-    <a [routerLink]="['/posts/newData']" style="margin-bottom:24px">NewData</a>
+  <h4 class="post-teaser__month">
+    <strong>- - - - - general - - - - - </strong>
+  </h4>
+  <ul class="list-posts">
+    <li class="post-teaser" *ngFor="let post of generalPost?.posts">
+      <a [routerLink]="['/posts', post.postName]">
+        <span class="post-teaser__title">
+          {{ post?.postTitle }}
+        </span>
+        <span class="post-teaser__date">
+          {{ post?.postDate }}
+        </span>
+      </a>
+    </li>
+  </ul>
 </div>
+
+<app-about></app-about>

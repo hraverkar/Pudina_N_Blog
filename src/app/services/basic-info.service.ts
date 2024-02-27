@@ -4,6 +4,7 @@ import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { IbasicInforamtion } from '../interface/ibasic-inforamtion';
 import { IResumeInformation } from '../interface/iresume-information';
 import { IPostInformation } from '../interface/ipost-information';
+import { GeneralPost } from '../interface/ipost-property';
 
 @Injectable({
   providedIn: 'root',
@@ -39,6 +40,10 @@ export class BasicInfoService {
     });
 
     return this.httpClient.get(filePath, { headers, responseType: 'blob' });
+  }
+
+  public getAllBlogInformation(): Observable<GeneralPost> {
+    return this.httpClient.get<GeneralPost>("../../assets/JsonData/blogPostList.json")
   }
 
 }

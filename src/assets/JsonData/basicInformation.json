@@ -1,9 +1,12 @@
 {
-    "title": "Pudina N",
-    "authorEmail": "harshal.raverkar@gmail.com",
-    "authorGithub": "hraverkar",
-    "authorLinkedin": "hraverkar",
-    "authorGoogle": "http://surl.li/qwtcc",
-    "page_title": "Hello",
-    "page_subTitle": "My Name is Harshal"
+  "title": "Pudina N",
+  "authorEmail": "harshal.raverkar@gmail.com",
+  "authorGithub": "hraverkar",
+  "authorLinkedin": "hraverkar",
+  "authorGoogle": "http://surl.li/qwtcc",
+  "page_title": "Hello",
+  "page_subTitle": "My Name is Harshal",
+  "about_quotes": "Talk is cheap. Show me the code. ― Linus Torvalds",
+  "about_pudinaTheme": "Pudina theme by Harshal",
+  "about_change_word": "You can change this text in component/about/about.component.html"
 }

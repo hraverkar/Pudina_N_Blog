@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { CommonModule } from '@angular/common';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -18,6 +19,7 @@ bootstrapApplication(AppComponent, {
       ReactiveFormsModule,
       MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE }),
       HttpClientModule,
+      CommonModule
     ),
   ]
 })

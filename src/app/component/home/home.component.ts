@@ -8,14 +8,18 @@ import { AboutComponent } from '../about/about.component';
   standalone: true,
   imports: [AboutComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
+  //#region public property
   public BasicInformation: IbasicInforamtion | undefined;
-  public constructor(private basicInfoService: BasicInfoService) { }
+  //#endregion
+  //#region public methods
+  public constructor(private basicInfoService: BasicInfoService) {}
   public ngOnInit(): void {
     this.basicInfoService.data$.subscribe((res: IbasicInforamtion) => {
       this.BasicInformation = res;
     });
   }
+  //#endregion
 }

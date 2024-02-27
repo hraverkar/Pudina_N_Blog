@@ -1,0 +1,14 @@
+{
+    "posts": [
+        {
+            "postName": "Welcome-to-Pudina",
+            "postTitle": "Welcome to Pudina",
+            "postDate": "26 February 2024"
+        },
+        {
+            "postName": "Welcome-to-Angular",
+            "postTitle": "Welcome to Angular 17",
+            "postDate": "26 February 2024"
+        }
+    ]
+}
