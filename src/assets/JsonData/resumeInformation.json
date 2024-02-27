@@ -1,6 +1,12 @@
 {
-    "page_title": "Résumé",
-    "page_subTitle": "An Awesome person :)",
-    "donwloadResume": "Download Awesome Resume",
-    "resumeFilePath": "../../assets/Pdf/Harshal_Raverkar_6YOE_SE.pdf"
+  "page_title": "Résumé",
+  "page_subTitle": "An Awesome person :)",
+  "donwloadResume": "Download Awesome Resume",
+  "resumeFilePath": "../../assets/Pdf/Harshal_Raverkar_6YOE_SE.pdf",
+  "workExperience": "Work Experience",
+  "currentCompany": {
+    "companyName": "Deloitte USI (Deloitte Tax India Pvt. Ltd.)",
+    "location": "Hyderabad, India",
+    "workInformation": "As a Lead software engineer, I specialize in the development of tax software, catering primarily to clients in the United Kingdom (UK) and Ireland. With an extensive focus on creating sophisticated solutions, I navigate the intricate landscape of tax regulations to ensure compliance and efficiency for our diverse client base."
+  }
 }

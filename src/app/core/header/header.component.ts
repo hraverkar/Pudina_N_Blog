@@ -4,11 +4,12 @@ import { IbasicInforamtion } from '../../interface/ibasic-inforamtion';
 import { Router } from '@angular/router';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatTooltipModule],
+  imports: [MatTooltipModule, ThemeToggleComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
