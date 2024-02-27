@@ -13,6 +13,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CommonModule } from '@angular/common';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -26,7 +27,8 @@ bootstrapApplication(AppComponent, {
         sanitize: SecurityContext.NONE,
       }),
       HttpClientModule,
-      CommonModule
+      CommonModule,
+      NgxSpinnerModule.forRoot()
     ),
   ],
 }).catch((err) => console.error(err));

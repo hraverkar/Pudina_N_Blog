@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MarkdownModule, MarkdownService } from 'ngx-markdown';
 import { AboutComponent } from '../about/about.component';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-posts',
@@ -17,11 +18,13 @@ export class PostsComponent {
   //#endregion
 
   //#region public methods
-  public constructor(private route: ActivatedRoute) {}
+  public constructor(private route: ActivatedRoute, private spinnerService: NgxSpinnerService) {}
   public ngOnInit(): void {
+    this.spinnerService.show();
     let articleName = this.route.snapshot.paramMap.get('article');
     this.href = window.location.href;
     this.post = '../../../assets/Post/' + articleName + '.md';
+    this.spinnerService.hide();
   }
   //#endregion
 }

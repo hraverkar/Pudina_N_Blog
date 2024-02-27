@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BasicInfoService } from '../../services/basic-info.service';
 import { IbasicInforamtion } from '../../interface/ibasic-inforamtion';
 import { AboutComponent } from '../about/about.component';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-home',
@@ -15,12 +16,14 @@ export class HomeComponent implements OnInit {
   public BasicInformation: IbasicInforamtion | undefined;
     //#endregion
   //#region public methods
-  public constructor(private basicInfoService: BasicInfoService) {}
+  public constructor(private basicInfoService: BasicInfoService, private spinnerService: NgxSpinnerService) {}
   public ngOnInit(): void {
+    this.spinnerService.show();
     this.basicInfoService.data$.subscribe((res: IbasicInforamtion) => {
       this.BasicInformation = res;
     });
     this.getSalutation();
+    this.spinnerService.hide();
   }
 
   public getSalutation(): string {

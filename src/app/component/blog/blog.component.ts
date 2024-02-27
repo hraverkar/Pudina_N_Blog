@@ -6,6 +6,7 @@ import { PostsComponent } from '../posts/posts.component';
 import { CommonModule } from '@angular/common';
 import { GeneralPost } from '../../interface/ipost-property';
 import { AboutComponent } from '../about/about.component';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-blog',
@@ -23,10 +24,12 @@ export class BlogComponent {
   //#region public methods
   public constructor(
     private basicInfoService: BasicInfoService,
-    private router: Router
+    private router: Router,
+    private spinnerService: NgxSpinnerService
   ) {}
 
   public ngOnInit(): void {
+    this.spinnerService.show();
     this.getPostBasicDetails();
     this.getAllBlogPost();
   }
@@ -50,6 +53,7 @@ export class BlogComponent {
         if (res !== undefined || res !== null) {
           this.generalPost = res;
         }
+        this.spinnerService.hide();
       });
   }
   //#endregion
