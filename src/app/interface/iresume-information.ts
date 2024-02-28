@@ -13,6 +13,8 @@ export interface IResumeInformation {
   skills: string;
   project: string;
   projectDetails: projectDetails[];
+  education: string;
+  schoolDetails: schoolDetails[];
 }
 
 export interface ICurrentCompany {
@@ -34,4 +36,10 @@ export interface projectDetails {
 
 export interface technology {
   techName: string;
+}
+
+export interface schoolDetails {
+  schoolName: string;
+  schoolLocation: string;
+  schoolCourse: string;
 }

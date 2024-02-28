@@ -66,4 +66,23 @@
             {{project?.project_Description}}
         </span>
     </p>
+
+    <h3 id="school">{{resumeBasicInformation?.education}} </h3>
+    <p *ngFor="let school of resumeBasicInformation?.schoolDetails">
+        <span class="language-plaintext highlighter-rouge">
+            <a>
+                {{school?.schoolName}}
+            </a>
+        </span>
+        <span class="language-plaintext highlighter-rouge right-position">
+            {{school?.schoolLocation}}
+        </span>
+        <br>
+        <span class="language-plaintext highlighter-rouge">
+            {{school?.schoolCourse}}
+        </span>
+        <br>
+    </p>
 </div>
+
+<app-about></app-about>

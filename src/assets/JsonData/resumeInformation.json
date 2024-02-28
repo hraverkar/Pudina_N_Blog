@@ -9,6 +9,7 @@
   "programmingSkills": "Programming Language / Databases",
   "gisSkills": "GIS Packages / API Development",
   "project": "Project",
+  "education": "Education",
   "currentCompany": [
     {
       "companyName": "Deloitte USI (Deloitte Tax India Pvt. Ltd.)",
@@ -107,7 +108,7 @@
         " MongoDB "
       ],
       "client_name": "Deloitte UK Internal",
-      "project_Description": "Mercury is meticulously crafted to streamline and automate the Corporate Tax compliance journey by seamlessly integrating with kortical's APIs. Our software effortlessly handles the reception of raw client data, structures it efficiently, extracts comprehensive trial balance records, and seamlessly transmits the computed information for tax filing. Powered by the OneSource Software, our solution ensures a smooth and efficient corporate tax compliance process. With Mercury, we have successfully onboarded over 2000 corporate clients and facilitated numerous filings, demonstrating our commitment to providing a robust and efficient solution for corporate tax compliance."
+      "project_Description": "Efiling project developed using Angular and dotnet core as back-end technology. Efiling used for approving various client computation request for tax compliance."
     },
     {
       "projectName": "GeoFocis Desktop & GeoFocis Web",
@@ -125,7 +126,7 @@
         " Cesium-JS "
       ],
       "client_name": "United State Forest Service",
-      "project_Description": "Mercury is meticulously crafted to streamline and automate the Corporate Tax compliance journey by seamlessly integrating with kortical's APIs. Our software effortlessly handles the reception of raw client data, structures it efficiently, extracts comprehensive trial balance records, and seamlessly transmits the computed information for tax filing. Powered by the OneSource Software, our solution ensures a smooth and efficient corporate tax compliance process. With Mercury, we have successfully onboarded over 2000 corporate clients and facilitated numerous filings, demonstrating our commitment to providing a robust and efficient solution for corporate tax compliance."
+      "project_Description": "GeoFOCIS creates a centralized, accessible web based server to host and fuse platform information with incidents and real-time products using portable mapping software (Luciad).GeoFOCIS product used for ISR(intelligence, surveillance, and reconnaissance) data for analyzing the real time incident and fire data. Create tool for draw point, polygon, poly-line on map. Adding different raster and vector layers, customize and styling layer data to GeoFOCIS. Create shape-file, KML, KMZ file and export files with styling data layer. Overlay tools for comparing different vector layer data set."
     },
     {
       "projectName": "INTELLINEWS",
@@ -137,13 +138,25 @@
         " Google Maps API "
       ],
       "client_name": "AEVEX Aerospace (USA) - Internal",
-      "project_Description": "Mercury is meticulously crafted to streamline and automate the Corporate Tax compliance journey by seamlessly integrating with kortical's APIs. Our software effortlessly handles the reception of raw client data, structures it efficiently, extracts comprehensive trial balance records, and seamlessly transmits the computed information for tax filing. Powered by the OneSource Software, our solution ensures a smooth and efficient corporate tax compliance process. With Mercury, we have successfully onboarded over 2000 corporate clients and facilitated numerous filings, demonstrating our commitment to providing a robust and efficient solution for corporate tax compliance."
+      "project_Description": "IntelliNews is an online map application, where user can define the Region Of Interest (ROI) to get the live news articles, directly to their Facebook and twitter account."
     },
     {
       "projectName": "SOIS Portal",
       "tech_Used": [" C#(.Net) ", " ASP Net ", " MSSQL "],
       "client_name": "Manipal University",
-      "project_Description": "Mercury is meticulously crafted to streamline and automate the Corporate Tax compliance journey by seamlessly integrating with kortical's APIs. Our software effortlessly handles the reception of raw client data, structures it efficiently, extracts comprehensive trial balance records, and seamlessly transmits the computed information for tax filing. Powered by the OneSource Software, our solution ensures a smooth and efficient corporate tax compliance process. With Mercury, we have successfully onboarded over 2000 corporate clients and facilitated numerous filings, demonstrating our commitment to providing a robust and efficient solution for corporate tax compliance."
+      "project_Description": "Handled the internal project of Manipal University. Worked on SoIS Portal, Placement Assistant tools and internship project tracker to handle the placement activity, internship & final presentation information of student automated by this tool."
+    }
+  ],
+  "schoolDetails": [
+    {
+      "schoolName": "Manipal Institute of Technology, Manipal",
+      "schoolLocation": "Manipal, India",
+      "schoolCourse": "Master of Science Technology in Computing Technology & Virtualization"
+    },
+    {
+      "schoolName": "Rajiv Gandhi Produyogiki Vishwavidhalaya, Indore",
+      "schoolLocation": "Indore, India",
+      "schoolCourse": "Bachelor of Engineering in Computer Science & Engineering"
     }
   ]
 }
