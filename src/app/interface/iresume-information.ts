@@ -11,6 +11,8 @@ export interface IResumeInformation {
   programmingSkills: string;
   gisSkills: string;
   skills: string;
+  project: string;
+  projectDetails: projectDetails[];
 }
 
 export interface ICurrentCompany {
@@ -21,4 +23,15 @@ export interface ICurrentCompany {
 
 export interface skills {
   skillName: string;
+}
+
+export interface projectDetails {
+  projectName: string;
+  tech_Used: technology[];
+  client_name: string;
+  project_Description: string;
+}
+
+export interface technology {
+  techName: string;
 }

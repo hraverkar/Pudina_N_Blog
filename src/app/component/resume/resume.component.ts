@@ -13,7 +13,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './resume.component.scss',
 })
 export class ResumeComponent implements OnInit {
+  //#region public property
   public resumeBasicInformation: IResumeInformation;
+  //#endregion
+
+  //#region public methods
   public constructor(
     private basicInfoService: BasicInfoService,
     private spinnerService: NgxSpinnerService
@@ -39,6 +43,10 @@ export class ResumeComponent implements OnInit {
     });
   }
 
+  //#endregion
+
+  //#region private methods
+
   private getResumeBasicDetails(): void {
     this.spinnerService.show();
     this.basicInfoService
@@ -50,4 +58,5 @@ export class ResumeComponent implements OnInit {
         this.spinnerService.hide();
       });
   }
+  //#endregion
 }

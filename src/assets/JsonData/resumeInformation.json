@@ -8,6 +8,7 @@
   "skills": "Skills",
   "programmingSkills": "Programming Language / Databases",
   "gisSkills": "GIS Packages / API Development",
+  "project": "Project",
   "currentCompany": [
     {
       "companyName": "Deloitte USI (Deloitte Tax India Pvt. Ltd.)",
@@ -81,6 +82,68 @@
     },
     {
       "skillName": "Visual Studio"
+    }
+  ],
+  "projectDetails": [
+    {
+      "projectName": "CT Automation - Mercury",
+      "tech_Used": [
+        " C#(.Net) ",
+        " Azure ",
+        " Angular ",
+        " MSSQL ",
+        " MongoDB "
+      ],
+      "client_name": "Deloitte UK Internal",
+      "project_Description": "Mercury is meticulously crafted to streamline and automate the Corporate Tax compliance journey by seamlessly integrating with kortical's APIs. Our software effortlessly handles the reception of raw client data, structures it efficiently, extracts comprehensive trial balance records, and seamlessly transmits the computed information for tax filing. Powered by the OneSource Software, our solution ensures a smooth and efficient corporate tax compliance process. With Mercury, we have successfully onboarded over 2000 corporate clients and facilitated numerous filings, demonstrating our commitment to providing a robust and efficient solution for corporate tax compliance."
+    },
+    {
+      "projectName": "EFiling - Filing Approval",
+      "tech_Used": [
+        " C#(.Net) ",
+        " Azure ",
+        " Angular ",
+        " MSSQL ",
+        " MongoDB "
+      ],
+      "client_name": "Deloitte UK Internal",
+      "project_Description": "Mercury is meticulously crafted to streamline and automate the Corporate Tax compliance journey by seamlessly integrating with kortical's APIs. Our software effortlessly handles the reception of raw client data, structures it efficiently, extracts comprehensive trial balance records, and seamlessly transmits the computed information for tax filing. Powered by the OneSource Software, our solution ensures a smooth and efficient corporate tax compliance process. With Mercury, we have successfully onboarded over 2000 corporate clients and facilitated numerous filings, demonstrating our commitment to providing a robust and efficient solution for corporate tax compliance."
+    },
+    {
+      "projectName": "GeoFocis Desktop & GeoFocis Web",
+      "tech_Used": [
+        " C#(.Net) ",
+        " WPF ",
+        " MVVM ",
+        " Angular ",
+        " MSSQL ",
+        " MongoDB ",
+        " Java ",
+        " NodeJS ",
+        " PostGreSQL ",
+        " JavaScript ",
+        " Cesium-JS "
+      ],
+      "client_name": "United State Forest Service",
+      "project_Description": "Mercury is meticulously crafted to streamline and automate the Corporate Tax compliance journey by seamlessly integrating with kortical's APIs. Our software effortlessly handles the reception of raw client data, structures it efficiently, extracts comprehensive trial balance records, and seamlessly transmits the computed information for tax filing. Powered by the OneSource Software, our solution ensures a smooth and efficient corporate tax compliance process. With Mercury, we have successfully onboarded over 2000 corporate clients and facilitated numerous filings, demonstrating our commitment to providing a robust and efficient solution for corporate tax compliance."
+    },
+    {
+      "projectName": "INTELLINEWS",
+      "tech_Used": [
+        " NodeJS ",
+        " Angular ",
+        " PostGreSQL ",
+        " MongoDB ",
+        " Google Maps API "
+      ],
+      "client_name": "AEVEX Aerospace (USA) - Internal",
+      "project_Description": "Mercury is meticulously crafted to streamline and automate the Corporate Tax compliance journey by seamlessly integrating with kortical's APIs. Our software effortlessly handles the reception of raw client data, structures it efficiently, extracts comprehensive trial balance records, and seamlessly transmits the computed information for tax filing. Powered by the OneSource Software, our solution ensures a smooth and efficient corporate tax compliance process. With Mercury, we have successfully onboarded over 2000 corporate clients and facilitated numerous filings, demonstrating our commitment to providing a robust and efficient solution for corporate tax compliance."
+    },
+    {
+      "projectName": "SOIS Portal",
+      "tech_Used": [" C#(.Net) ", " ASP Net ", " MSSQL "],
+      "client_name": "Manipal University",
+      "project_Description": "Mercury is meticulously crafted to streamline and automate the Corporate Tax compliance journey by seamlessly integrating with kortical's APIs. Our software effortlessly handles the reception of raw client data, structures it efficiently, extracts comprehensive trial balance records, and seamlessly transmits the computed information for tax filing. Powered by the OneSource Software, our solution ensures a smooth and efficient corporate tax compliance process. With Mercury, we have successfully onboarded over 2000 corporate clients and facilitated numerous filings, demonstrating our commitment to providing a robust and efficient solution for corporate tax compliance."
     }
   ]
 }

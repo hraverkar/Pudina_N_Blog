@@ -23,8 +23,8 @@
             {{position?.location}}
         </span>
         <br>
-        <span>
-            {{position.workInformation}}
+        <span class="selector">
+            {{position?.workInformation}}
         </span>
     </p>
 
@@ -43,6 +43,26 @@
                     <li>{{gisSkill.skillName}}</li>
                 </ul>
             </div>
+        </span>
+    </p>
+
+    <h3 id="project">{{resumeBasicInformation?.project}} </h3>
+    <p *ngFor="let project of resumeBasicInformation?.projectDetails">
+        <span class="language-plaintext highlighter-rouge">
+            <a>
+                {{project?.projectName}}
+            </a>
+        </span>
+        <span class="language-plaintext highlighter-rouge right-position">
+           Client - {{project?.client_name}}
+        </span>
+        <br>
+        <span class="language-plaintext highlighter-rouge">
+            {{project?.tech_Used}}
+        </span>
+        <br>
+        <span class="selector">
+            {{project?.project_Description}}
         </span>
     </p>
 </div>
