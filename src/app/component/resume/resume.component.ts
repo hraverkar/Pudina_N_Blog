@@ -3,11 +3,12 @@ import { BasicInfoService } from '../../services/basic-info.service';
 import { IResumeInformation } from '../../interface/iresume-information';
 import { MatTooltip } from '@angular/material/tooltip';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [MatTooltip],
+  imports: [MatTooltip, CommonModule],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss',
 })

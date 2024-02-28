@@ -13,76 +13,34 @@
 
 <div class="resume-details-position">
     <h3 id="skills">{{resumeBasicInformation?.workExperience}} </h3>
-    <p>
+    <p *ngFor="let position of resumeBasicInformation?.currentCompany">
         <span class="language-plaintext highlighter-rouge">
             <a>
-                {{resumeBasicInformation?.currentCompany.companyName}}
+                {{position?.companyName}}
             </a>
         </span>
         <span class="language-plaintext highlighter-rouge right-position">
-            {{resumeBasicInformation?.currentCompany.location}}
+            {{position?.location}}
         </span>
         <br>
         <span>
-            {{resumeBasicInformation?.currentCompany.workInformation}}
+            {{position.workInformation}}
         </span>
     </p>
-    <h4 id="skills">Previous Experience </h4>
-    <span class="language-plaintext highlighter-rouge">
-        <a>
-            Sutherland Healthcare Services Pvt. Ltd.
-        </a>
-    </span>
-    <span class="language-plaintext highlighter-rouge right-position">
-        Bengaluru, India
-    </span>
-    <br>
-    <span class="language-plaintext highlighter-rouge">
-        <a>
-            GeoOpsis Software Services - (AEVEX Aerospace USA)
-        </a>
-    </span>
-    <span class="language-plaintext highlighter-rouge right-position">
-        Bengaluru, India
-    </span>
-    <br>
-    <span class="language-plaintext highlighter-rouge">
-        <a>
-            BOP Philips Manipal
-        </a>
-    </span>
-    <span class="language-plaintext highlighter-rouge right-position">
-        Manipal, India
-    </span>
 
-    <h3 id="skills">Skills </h3>
+    <h3 id="skills">{{resumeBasicInformation?.skills}}</h3>
     <p>
         <span class="language-plaintext highlighter-rouge">
             <div class='division'>
-                <h5>Programming Language / Databases</h5>
-
-                <ul>
-                    <li>C# (.NET Core)</li>
-                    <li>Angular</li>
-                    <li>JavaScript</li>
-                    <li>NodeJS</li>
-                    <li>TypeScript</li>
-                    <li>WPF</li>
-                    <li>MSSQL</li>
-                    <li>PostGreSQL</li>
+                <h5>{{resumeBasicInformation?.programmingSkills}}</h5>
+                <ul *ngFor="let devSkill of resumeBasicInformation?.devSkillsName">
+                    <li>{{devSkill.skillName}}</li>
                 </ul>
             </div>
             <div class='division'>
-                <h5> GIS Packages / API Development</h5>
-                <ul>
-                    <li>Azure DevOps</li>
-                    <li>Luciad Developer</li>
-                    <li>Open Layer</li>
-                    <li>Google Maps</li>
-                    <li>Cesium JS</li>
-                    <li>Git</li>
-                    <li>Visual Studio</li>
-                    <li>Rest API Development</li>
+                <h5>{{resumeBasicInformation?.gisSkills}}</h5>
+                <ul *ngFor="let gisSkill of resumeBasicInformation?.gisSkillsName">
+                    <li>{{gisSkill.skillName}}</li>
                 </ul>
             </div>
         </span>

@@ -4,12 +4,21 @@ export interface IResumeInformation {
   donwloadResume: string;
   resumeFilePath: string;
   workExperience: string;
-  currentCompany: ICurrentCompany;
-  
+  previousExperience: string;
+  currentCompany: ICurrentCompany[];
+  devSkillsName: skills[];
+  gisSkillsName: skills[];
+  programmingSkills: string;
+  gisSkills: string;
+  skills: string;
 }
 
 export interface ICurrentCompany {
   companyName: string;
   location: string;
   workInformation: string;
+}
+
+export interface skills {
+  skillName: string;
 }

@@ -4,9 +4,83 @@
   "donwloadResume": "Download Awesome Resume",
   "resumeFilePath": "../../assets/Pdf/Harshal_Raverkar_6YOE_SE.pdf",
   "workExperience": "Work Experience",
-  "currentCompany": {
-    "companyName": "Deloitte USI (Deloitte Tax India Pvt. Ltd.)",
-    "location": "Hyderabad, India",
-    "workInformation": "As a Lead software engineer, I specialize in the development of tax software, catering primarily to clients in the United Kingdom (UK) and Ireland. With an extensive focus on creating sophisticated solutions, I navigate the intricate landscape of tax regulations to ensure compliance and efficiency for our diverse client base."
-  }
+  "previousExperience": "Previous Experience",
+  "skills": "Skills",
+  "programmingSkills": "Programming Language / Databases",
+  "gisSkills": "GIS Packages / API Development",
+  "currentCompany": [
+    {
+      "companyName": "Deloitte USI (Deloitte Tax India Pvt. Ltd.)",
+      "location": "Hyderabad, India",
+      "workInformation": "As a Lead software engineer, I specialize in the development of tax software, catering primarily to clients in the United Kingdom (UK) and Ireland. With an extensive focus on creating sophisticated solutions, I navigate the intricate landscape of tax regulations to ensure compliance and efficiency for our diverse client base."
+    },
+    {
+      "companyName": "Sutherland Healthcare Services Pvt. Ltd.",
+      "location": "Bengaluru, India",
+      "workInformation": null
+    },
+    {
+      "companyName": "GeoOpsis Software Services - (AEVEX Aerospace USA)",
+      "location": "Bengaluru, India",
+      "workInformation": null
+    },
+    {
+      "companyName": "BOP Philips Manipal",
+      "location": "Manipal, India",
+      "workInformation": null
+    }
+  ],
+
+  "devSkillsName": [
+    {
+      "skillName": "C# (.NET Core)"
+    },
+    {
+      "skillName": "Angular"
+    },
+    {
+      "skillName": "JavaScript"
+    },
+    {
+      "skillName": "NodeJS"
+    },
+    {
+      "skillName": "TypeScript"
+    },
+    {
+      "skillName": "WPF"
+    },
+    {
+      "skillName": "MSSQL"
+    },
+    {
+      "skillName": "PostGreSQL"
+    }
+  ],
+  "gisSkillsName": [
+    {
+      "skillName": "Azure DevOps"
+    },
+    {
+      "skillName": "Luciad Developer"
+    },
+    {
+      "skillName": "Open Layers Maps"
+    },
+    {
+      "skillName": "Google Maps"
+    },
+    {
+      "skillName": "CesiumJS"
+    },
+    {
+      "skillName": "Git / Github"
+    },
+    {
+      "skillName": "Rest API Development"
+    },
+    {
+      "skillName": "Visual Studio"
+    }
+  ]
 }
