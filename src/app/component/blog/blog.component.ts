@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { IPostInformation } from '../../interface/ipost-information';
 import { BasicInfoService } from '../../services/basic-info.service';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { PostsComponent } from '../posts/posts.component';
 import { CommonModule } from '@angular/common';
-import { GeneralPost } from '../../interface/ipost-property';
+import { GeneralPost, Post } from '../../interface/ipost-property';
 import { AboutComponent } from '../about/about.component';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-blog',
@@ -24,7 +25,6 @@ export class BlogComponent {
   //#region public methods
   public constructor(
     private basicInfoService: BasicInfoService,
-    private router: Router,
     private spinnerService: NgxSpinnerService
   ) {}
 
@@ -49,8 +49,25 @@ export class BlogComponent {
   private getAllBlogPost() {
     this.basicInfoService
       .getAllBlogInformation()
-      .subscribe((res: GeneralPost) => {
-        if (res !== undefined || res !== null) {
+      .pipe(
+        map((res: GeneralPost) => {
+          if (res && res.techPosts) {
+            const convertAndSort = (posts: Post[]) =>
+              posts
+                .map((p: Post) => ({ ...p, postDate: new Date(p.postDate) }))
+                .sort(
+                  (a: Post, b: Post) =>
+                    b.postDate.getTime() - a.postDate.getTime()
+                );
+            res.techPosts = convertAndSort(res.techPosts);
+            res.generalPosts = convertAndSort(res.generalPosts);
+            return res;
+          }
+          return null;
+        })
+      )
+      .subscribe((res) => {
+        if (res) {
           this.generalPost = res;
         }
         this.spinnerService.hide();

@@ -1,10 +1,10 @@
-
 export interface Post {
-    postName: string;
-    postTitle: string;
-    postDate: string;
+  postName: string;
+  postTitle: string;
+  postDate: Date;
 }
 
 export interface GeneralPost {
-    posts: Post[];
+  techPosts: Post[];
+  generalPosts: Post[];
 }

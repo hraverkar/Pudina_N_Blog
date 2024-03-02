@@ -108,7 +108,7 @@
         " MongoDB "
       ],
       "client_name": "Deloitte UK Internal",
-      "project_Description": "Efiling project developed using Angular and dotnet core as back-end technology. Efiling used for approving various client computation request for tax compliance."
+      "project_Description": "The eFiling project has been developed utilizing Angular as the front-end technology and Dotnet Core as the back-end technology. This platform serves as a crucial tool for approving various client computation requests, ensuring tax compliance. eFiling streamlines the process of handling and approving these requests, contributing to a more efficient and effective tax management system."
     },
     {
       "projectName": "GeoFocis Desktop & GeoFocis Web",
@@ -126,7 +126,7 @@
         " Cesium-JS "
       ],
       "client_name": "United State Forest Service",
-      "project_Description": "GeoFOCIS creates a centralized, accessible web based server to host and fuse platform information with incidents and real-time products using portable mapping software (Luciad).GeoFOCIS product used for ISR(intelligence, surveillance, and reconnaissance) data for analyzing the real time incident and fire data. Create tool for draw point, polygon, poly-line on map. Adding different raster and vector layers, customize and styling layer data to GeoFOCIS. Create shape-file, KML, KMZ file and export files with styling data layer. Overlay tools for comparing different vector layer data set."
+      "project_Description": "GeoFOCIS establishes a centralized and accessible web-based server designed to host and integrate platform information seamlessly with incidents and real-time products, leveraging portable mapping software, specifically Luciad. The GeoFOCIS product serves as a critical tool for Intelligence, Surveillance, and Reconnaissance (ISR) data, facilitating the analysis of real-time incident and fire data.The platform offers a versatile set of tools, empowering users to draw points, polygons, and polylines directly on the map. Additionally, it supports the incorporation of various raster and vector layers, allowing for customization and styling of layer data within the GeoFOCIS interface. Users can create shape-files, KML, and KMZ files, exporting them with the associated styling data layer. Furthermore, GeoFOCIS provides overlay tools that enable users to compare different vector layer datasets, enhancing the platform's capabilities for comprehensive spatial analysis."
     },
     {
       "projectName": "INTELLINEWS",
@@ -138,7 +138,7 @@
         " Google Maps API "
       ],
       "client_name": "AEVEX Aerospace (USA) - Internal",
-      "project_Description": "IntelliNews is an online map application, where user can define the Region Of Interest (ROI) to get the live news articles, directly to their Facebook and twitter account."
+      "project_Description": "IntelliNews stands as an innovative online map application, revolutionizing the way users engage with real-time news. This dynamic platform empowers users to precisely define their Region Of Interest (ROI), enabling them to curate a personalized and relevant news feed. By selecting specific geographical areas on the map, users can receive live news articles delivered seamlessly to their Facebook and Twitter accounts. This interactive approach not only enhances user experience but also provides a comprehensive and localized perspective on unfolding events. Whether it's staying informed about global happenings or focusing on news that directly impacts a chosen region, IntelliNews offers a tailored and connected experience for users seeking the latest updates."
     },
     {
       "projectName": "SOIS Portal",

@@ -9,13 +9,13 @@
   </h4>
 
   <ul class="list-posts">
-    <li class="post-teaser" *ngFor="let post of generalPost?.posts">
-      <a [routerLink]="['/posts', post.postName]">
+    <li class="post-teaser" *ngFor="let techPost of generalPost?.techPosts">
+      <a [routerLink]="['/posts', techPost.postName]">
         <span class="post-teaser__title">
-          {{ post?.postTitle }}
+          {{ techPost?.postTitle }}
         </span>
         <span class="post-teaser__date">
-          {{ post?.postDate }}
+          {{ techPost?.postDate | date }}
         </span>
       </a>
     </li>
@@ -26,13 +26,13 @@
     <strong>- - - - - general - - - - - </strong>
   </h4>
   <ul class="list-posts">
-    <li class="post-teaser" *ngFor="let post of generalPost?.posts">
-      <a [routerLink]="['/posts', post.postName]">
+    <li class="post-teaser" *ngFor="let generalPost of generalPost?.generalPosts">
+      <a [routerLink]="['/posts', generalPost.postName]">
         <span class="post-teaser__title">
-          {{ post?.postTitle }}
+          {{ generalPost?.postTitle }}
         </span>
         <span class="post-teaser__date">
-          {{ post?.postDate }}
+          {{ generalPost?.postDate | date }}
         </span>
       </a>
     </li>
