@@ -1,2 +1,2 @@
 [build]
-  publish = "dist/my_blog/"
+  publish = "dist/my_blog/browser"
