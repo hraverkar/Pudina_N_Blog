@@ -1,5 +1,7 @@
 #### 03 March 2024
 
+#### Author: Harshal Raverkar
+
 # Design System - Spotify App
 ___
 
