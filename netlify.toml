@@ -1,2 +1,7 @@
 [build]
   publish = "dist/my_blog/browser"
+
+[[redirect]]
+from = "/*"
+to = "/index.html
+satus =200
