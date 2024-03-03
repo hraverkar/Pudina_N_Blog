@@ -1,14 +1,14 @@
 {
   "techPosts": [
     {
-      "postName": "Welcome-to-Angular",
-      "postTitle": "Welcome to Angular 17",
-      "postDate": "02/03/2024"
-    },
-    {
       "postName": "OpenAI-with-Azure",
       "postTitle": "Learn to create the OpenAI chat boat with help of Azure",
       "postDate": "02/03/2024"
+    },
+    {
+      "postName": "design-spotify-app",
+      "postTitle": "Design Interview Question- Design Spotify APP",
+      "postDate": "03/03/2024"
     }
   ],
   "generalPosts": [
@@ -16,6 +16,11 @@
       "postName": "Welcome-to-Pudina",
       "postTitle": "Welcome to Pudina",
       "postDate": "01/03/2024"
+    },
+    {
+      "postName": "Welcome-to-Angular",
+      "postTitle": "Welcome to Angular 17",
+      "postDate": "02/03/2024"
     }
   ]
 }
