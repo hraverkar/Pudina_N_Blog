@@ -1,42 +1,42 @@
 <h1 class="page-title">
-  <div class="page-title__text">{{ postBasicInformation?.page_title }}</div>
-  <div class="page-title__subtitle">{{ postBasicInformation?.page_subTitle }}</div>
+    <div class="page-title__text">{{ postBasicInformation?.page_title }}</div>
+    <div class="page-title__subtitle">{{ postBasicInformation?.page_subTitle }}</div>
 </h1>
 
 <div>
-  <h4 class="post-teaser__month">
-    <strong>- - - - - Tech - - - - - </strong>
-  </h4>
+    <h4 class="post-teaser__month">
+        <strong>- - - - - {{postBasicInformation?.page_Tech}} - - - - - </strong>
+    </h4>
 
-  <ul class="list-posts">
-    <li class="post-teaser" *ngFor="let techPost of generalPost?.techPosts">
-      <a [routerLink]="['/posts', techPost.postName]">
-        <span class="post-teaser__title">
-          {{ techPost?.postTitle }}
-        </span>
-        <span class="post-teaser__date">
-          {{ techPost?.postDate | date }}
-        </span>
-      </a>
-    </li>
-  </ul>
-  <br>
+    <ul class="list-posts">
+        <li class="post-teaser" *ngFor="let techPost of generalPost?.techPosts">
+            <a [routerLink]="['/posts', techPost.postName]">
+                <span class="post-teaser__title">
+                    {{ techPost?.postTitle }}
+                </span>
+                <span class="post-teaser__date">
+                    {{ techPost?.postDate | date }}
+                </span>
+            </a>
+        </li>
+    </ul>
+    <br>
 
-  <h4 class="post-teaser__month">
-    <strong>- - - - - general - - - - - </strong>
-  </h4>
-  <ul class="list-posts">
-    <li class="post-teaser" *ngFor="let generalPost of generalPost?.generalPosts">
-      <a [routerLink]="['/posts', generalPost.postName]">
-        <span class="post-teaser__title">
-          {{ generalPost?.postTitle }}
-        </span>
-        <span class="post-teaser__date">
-          {{ generalPost?.postDate | date }}
-        </span>
-      </a>
-    </li>
-  </ul>
+    <h4 class="post-teaser__month">
+        <strong>- - - - - {{postBasicInformation?.page_General}} - - - - - </strong>
+    </h4>
+    <ul class="list-posts">
+        <li class="post-teaser" *ngFor="let generalPost of generalPost?.generalPosts">
+            <a [routerLink]="['/posts', generalPost.postName]">
+                <span class="post-teaser__title">
+                    {{ generalPost?.postTitle }}
+                </span>
+                <span class="post-teaser__date">
+                    {{ generalPost?.postDate | date }}
+                </span>
+            </a>
+        </li>
+    </ul>
 </div>
 
 <app-about></app-about>

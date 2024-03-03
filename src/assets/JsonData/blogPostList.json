@@ -3,24 +3,39 @@
     {
       "postName": "OpenAI-with-Azure",
       "postTitle": "Learn to create the OpenAI chat boat with help of Azure",
-      "postDate": "02/03/2024"
+      "postDate": "02/03/2024",
+      "postTag": ["Azure", "OpenAI", "C#", "AzureAI", "Interview"],
+      "postImage": []
     },
     {
       "postName": "design-spotify-app",
       "postTitle": "Design Interview Question- Design Spotify APP",
-      "postDate": "03/03/2024"
+      "postDate": "03/03/2024",
+      "postTag": [
+        "Spotify",
+        "Database",
+        "Design Pattern",
+        "AzureAI",
+        "Design Interview",
+        "Interview"
+      ],
+      "postImage": []
     }
   ],
   "generalPosts": [
     {
       "postName": "Welcome-to-Pudina",
       "postTitle": "Welcome to Pudina",
-      "postDate": "01/03/2024"
+      "postDate": "01/03/2024",
+      "postTag": ["Azure", "OpenAI", "C#", "AzureAI", "Interview"],
+      "postImage": []
     },
     {
       "postName": "Welcome-to-Angular",
       "postTitle": "Welcome to Angular 17",
-      "postDate": "02/03/2024"
+      "postDate": "02/03/2024",
+      "postTag": ["Azure", "OpenAI", "C#", "AzureAI", "Interview"],
+      "postImage": []
     }
   ]
 }

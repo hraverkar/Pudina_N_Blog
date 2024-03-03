@@ -1,4 +1,6 @@
 {
-    "page_title": "Blog Post",
-    "page_subTitle": "My work exceperience in written"
+  "page_title": "Blog Post",
+  "page_subTitle": "My work exceperience in written",
+  "page_Tech": "Technology",
+  "page_General": "General"
 }
