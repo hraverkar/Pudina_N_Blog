@@ -23,7 +23,7 @@
             {{position?.location}}
         </span>
         <br>
-        <span class="selector">
+        <span class="selector" *ngIf="position?.workInformation !== null">
             {{position?.workInformation}}
         </span>
     </p>
