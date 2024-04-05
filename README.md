@@ -1,13 +1,6 @@
 # Pudina N
 
-
-[![pipeline status](https://gitlab.com/hraverkar/Pudina_N_Blog/badges/master/pipeline.svg)](https://gitlab.com/hraverkar/Pudina_N_Blog/-/commits/master)
-
-
-[![Latest Release](https://gitlab.com/hraverkar/Pudina_N_Blog/-/badges/release.svg)](https://gitlab.com/hraverkar/Pudina_N_Blog/-/releases)
-
-
-[![pipeline status](https://gitlab.com/hraverkar/Pudina_N_Blog/badges/master/pipeline.svg)](https://gitlab.com/hraverkar/Pudina_N_Blog/-/commits/master)
+![Vercel Deploy](https://therealsujitk-vercel-badge.vercel.app/?app=pudina)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
