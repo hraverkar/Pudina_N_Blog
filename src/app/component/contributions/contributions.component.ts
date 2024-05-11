@@ -16,7 +16,7 @@ export class ContributionsComponent implements OnInit {
     constructor(private _contributionsService: ContributionService) {}
 
   ngOnInit(): void {
-    this.fetchGitHubContributions();
+   // this.fetchGitHubContributions();
   }
 
   fetchGitHubContributions() {
