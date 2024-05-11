@@ -64,6 +64,9 @@ export class HeaderComponent implements OnInit {
       case 'home':
         this.router.navigate(['/home']);
         break;
+      case 'project':
+        this.router.navigate(['/project']);
+        break;
     }
   }
 
