@@ -35,7 +35,7 @@ export class ResumeComponent implements OnInit {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'Harshal_Raverkar_SSE_8_Years.pdf'; // Specify the filename
+      a.download = 'Harshal_Raverkar_AVP-SSE_8Years.pdf'; // Specify the filename
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

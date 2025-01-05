@@ -2,7 +2,7 @@
   "page_title": "Résumé",
   "page_subTitle": "An Awesome person :)",
   "donwloadResume": "Download Awesome Resume",
-  "resumeFilePath": "../../assets/Pdf/Harshal_Raverkar_SSE_7Years.pdf",
+  "resumeFilePath": "../../assets/Pdf/Harshal_Raverkar_AVP-SSE_8Years.pdf",
   "workExperience": "Work Experience",
   "previousExperience": "Previous Experience",
   "skills": "Skills",
@@ -11,6 +11,10 @@
   "project": "Project",
   "education": "Education",
   "currentCompany": [
+    {
+      "companyName": "Swiss Re",
+      "location": "Hyderabad, India",
+      "workInformation": null   },
     {
       "companyName": "Deloitte USI (Deloitte Tax India Pvt. Ltd.)",
       "location": "Hyderabad, India",
