@@ -9,4 +9,6 @@ export interface IbasicInforamtion {
   about_quotes: string;
   about_pudinaTheme: string;
   about_change_word: string;
+  page_Other_title: string;
+  page_Other_subtitle: string; 
 }

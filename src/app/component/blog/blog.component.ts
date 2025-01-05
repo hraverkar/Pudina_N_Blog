@@ -12,7 +12,7 @@ import { map } from 'rxjs';
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [RouterModule, PostsComponent, CommonModule, AboutComponent],
+  imports: [RouterModule, CommonModule, AboutComponent],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.scss',
 })

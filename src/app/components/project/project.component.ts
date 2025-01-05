@@ -5,11 +5,12 @@ import { ContributionService } from '../../services/contribution.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { IResumeInformation } from '../../interface/iresume-information';
 import { IbasicInforamtion } from '../../interface/ibasic-inforamtion';
+import { PortfolioComponent } from "../portfolio/portfolio.component";
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [ContributionsComponent, AboutComponent],
+  imports: [ContributionsComponent, AboutComponent, PortfolioComponent],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
