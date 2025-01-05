@@ -20,6 +20,21 @@
         "Interview"
       ],
       "postImage": []
+    },
+
+    {
+      "postName": "implement-function-app-with-time-trigger",
+      "postTitle": "Implementation of Function App C# with Time Trigger",
+      "postDate": "01/05/2025",
+      "postTag": [
+        "C#",
+        "Function",
+        "Design Pattern",
+        "DI",
+        "Design Interview",
+        "Interview"
+      ],
+      "postImage": []
     }
   ],
   "generalPosts": [
