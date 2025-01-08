@@ -1,3 +1,7 @@
+#### 05 January 2025
+
+#### Author: Harshal Raverkar
+
 # Implementing the Factory Design Pattern [Github Link](https://github.com/hraverkar/Factory-Design-Pattern)
 ## What is the Factory Design Pattern? 
 
