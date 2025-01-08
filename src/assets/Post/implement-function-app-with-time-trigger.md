@@ -1,7 +1,7 @@
 #### 05 January 2025
 
 #### Author: Harshal Raverkar
-# Building and Implementing an Azure Function App with a Timer Trigger
+# Building and Implementing an Azure Function App with a Timer Trigger [GitHub Link](https://github.com/hraverkar/Function-App-TimeTrigger-Example)
 
 This article explains how I created a simple yet powerful Azure Function App using a Timer Trigger. The goal is to provide step-by-step guidance on implementing the app and understanding its use cases.
 

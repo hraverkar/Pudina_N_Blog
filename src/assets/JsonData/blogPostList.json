@@ -35,6 +35,19 @@
         "Interview"
       ],
       "postImage": []
+    },
+    {
+      "postName": "factory-pattern",
+      "postTitle": "C# Factory Design Pattern",
+      "postDate": "01/08/2025",
+      "postTag": [
+        "C#",
+        "Design Pattern",
+        "AzureAI",
+        "Design Interview",
+        "Interview"
+      ],
+      "postImage": []
     }
   ],
   "generalPosts": [
