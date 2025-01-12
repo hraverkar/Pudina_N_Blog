@@ -1,5 +1,13 @@
 {
   "page_utilities_title": "Utilities",
-  "page_utilities_subtitle": "best Utilities tools",
-  "page_guid_generator_title": "UUID Generator"
+  "page_utilities_subtitle": "Best Utilities tools",
+  "page_guid_generator_title": "UUID Generator",
+  "uitilitiesToolsInformation": [
+    {
+      "utilities_title": "UUID Generator",
+      "utilities_description": "Generate random UUIDs. Useful for creating unique identifiers for various applications such as database keys, session IDs, and more.",
+      "utilities_buttonName": "Try It",
+      "utilities_url": "utilities/uuid-generator"
+    }
+  ]
 }
