@@ -1,192 +1,251 @@
     /*  I prefer using filters transitions instead of various color changes. It uses gpu instead of cpu and is consuming less resources */
 
 
-    body{
-        min-height: 100vh ;
-        margin: 0;
-        background-color: #16a085;
-        color: white !important;
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-      }
-  
-      .cards-container{
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-      }
-  
-      .card{
-        position: relative;
-        margin: .5rem;
-        width: 80vw;
-        min-width: 200px;
-        max-width: 20rem;
-        border-radius: .5rem;
-        overflow: clip;
-      }
-  
-    
-  
-      .card:hover .truecontainer{
-        transition: .3s clip-path;
-        clip-path: inset(0% 0% 0% 0% round .6rem);
-      }
-  
-      .truecontainer{
-        padding-left: 2rem !important;
-        background-color: #16a085;
-        padding: .8rem;
-        padding-right: 1.6rem !important;
-        transition: .3s clip-path;
-        clip-path: inset(5% 0% 0% 5% round .6rem);
-        padding-top: 12.2rem;
-      }
-  
-      .preview-container{
-        z-index: 1;
-        height: 11.3rem;
-        position: absolute;
-        left: 5%;
-        top: 5%;
-        width: 90%;
-      }
-  
-      .preview{
-        cursor: pointer;
-        background-color: #1E1F26;
-        background: white;
-        height: 11.3rem;
-        width: 100%;
-        border-radius: .5rem;
-        background-image: url("../../../assets/Image/ss1.png");
-        
-        background-size:cover;
-        background-position:center;
-      }
-  
-      .card:nth-child(2) .preview{
-        background-image: url("../../../assets/Image/ss2.png") !important;
-      }
-      .card:nth-child(3) .preview{
-        background-image: url("../../../assets//Image/ss3.png") !important;
-      }
-      .card:nth-child(4) .preview{
-        background-image: url("../../../assets//Image/ss4.png") !important;
-      }
-  
-      .fullscreenbtn{
-        margin-right: 0px;
-        position: absolute;
-        width: 1rem;
-        height: 1rem;
-        padding: .35rem;
-        right: 1rem;
-        top: 1rem;
-        will-change: transform,filter;
-        transition: .5s all;
-        transform: translateX(.5rem) scale(.8);
-        filter: brightness(1) opacity(0%);
-        box-shadow: 0 .05rem .3rem #444444;
-      }
-  
-      .card:hover .fullscreenbtn{
-        will-change: transform,filter;
-        transition: .5s all;
-        transform: translateX(0rem) scale(1);     
-        filter: brightness(1) opacity(100%);
-      }
-  
-      .card:hover .fullscreenbtn:hover{
-        will-change: transform,filter;
-        transition: .5s all;
-        transform: scale(1.1);
-        filter: brightness(1.6);
-  
-      }
-  
-  
-      .row-1{
-        margin-top: .7rem;
-      }
-  
-      .row-1,.row-2{
-        display: flex;
-        flex-direction: row;
-      }
-  
-      .row-1 a{
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-        font-size: 1.1rem;
-      }
-  
-      .card:hover .ml-advanced{
-        color: #999;
-      }
-  
-      .row-1 .ml-advanced{
-        position: relative;
-        top: -.2rem;
-        margin-left: auto;
-        margin-right: -.2rem;
-        font-size: 3.25rem;
-        line-height: 0rem;
-        height: 0px;
-        font-family: serif;
-        background-color: inherit;
-        color: #626364;
-        letter-spacing: -2.8px;
-        padding: 0px;
-  
-      }
-  
-  
-      .row-2{
-        margin-top: 1rem;
-      }
-  
-      .btn{
-        appearance: none;
-        cursor: pointer;
-        color: white;
-        background-color:#444857;
-        padding: .3rem .5rem;
-        border: none;
-        border-radius: .2rem;
-        margin-right: .4rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(0px);
-  
-      }
-  
-      .row-2 .btn:hover{
-        background-color: #5a5f73;
-      }
-  
-      .row-2 .btn:active{
-        transform: translateY(1px);
-      }
-  
-  
-      svg{
-        width: .8rem;
-        height: .8rem;
-        display: inline-block;
-        fill: #fefefa;
-      }
-  
-      .row-2 svg{
-        margin-right: .2rem;
-      }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      // background-color: #16a085;
+      color: white !important;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .cards-container {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .card {
+      position: relative;
+      margin: .5rem;
+      width: 80vw;
+      min-width: 200px;
+      max-width: 20rem;
+      border-radius: .5rem;
+      overflow: clip;
+    }
+
+
+
+    .card:hover .truecontainer {
+      transition: .3s clip-path;
+      clip-path: inset(0% 0% 0% 0% round .6rem);
+    }
+
+    .truecontainer {
+      padding-left: 2rem !important;
+      // background-color: #16a085;
+      padding: .8rem;
+      padding-right: 1.6rem !important;
+      transition: .3s clip-path;
+      clip-path: inset(5% 0% 0% 5% round .6rem);
+      padding-top: 12.2rem;
+    }
+
+    .preview-container {
+      z-index: 1;
+      height: 11.3rem;
+      position: absolute;
+      left: 5%;
+      top: 5%;
+      width: 90%;
+    }
+
+    .preview {
+      cursor: pointer;
+      background-color: #1E1F26;
+      background: white;
+      height: 11.3rem;
+      width: 100%;
+      border-radius: .5rem;
+      background-image: url("../../../assets/Image/ss1.png");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card:nth-child(2) .preview {
+      background-image: url("../../../assets/Image/ss2.png") !important;
+    }
+
+    .card:nth-child(3) .preview {
+      background-image: url("../../../assets//Image/ss3.png") !important;
+    }
+
+    .card:nth-child(4) .preview {
+      background-image: url("../../../assets//Image/ss4.png") !important;
+    }
+
+    .fullscreenbtn {
+      margin-right: 0px;
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      padding: .35rem;
+      right: 1rem;
+      top: 1rem;
+      will-change: transform, filter;
+      transition: .5s all;
+      transform: translateX(.5rem) scale(.8);
+      filter: brightness(1) opacity(0%);
+      box-shadow: 0 .05rem .3rem #444444;
+    }
+
+    .card:hover .fullscreenbtn {
+      will-change: transform, filter;
+      transition: .5s all;
+      transform: translateX(0rem) scale(1);
+      filter: brightness(1) opacity(100%);
+    }
+
+    .card:hover .fullscreenbtn:hover {
+      will-change: transform, filter;
+      transition: .5s all;
+      transform: scale(1.1);
+      filter: brightness(1.6);
+
+    }
+
+
+    .row-1 {
+      margin-top: .7rem;
+    }
+
+    .row-1,
+    .row-2 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .row-1 a {
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .card:hover .ml-advanced {
+      color: #999;
+    }
+
+    .row-1 .ml-advanced {
+      position: relative;
+      top: -.2rem;
+      margin-left: auto;
+      margin-right: -.2rem;
+      font-size: 3.25rem;
+      line-height: 0rem;
+      height: 0px;
+      font-family: serif;
+      background-color: inherit;
+      color: #626364;
+      letter-spacing: -2.8px;
+      padding: 0px;
+
+    }
+
+
+    .row-2 {
+      margin-top: 1rem;
+    }
+
+    .btn {
+      appearance: none;
+      cursor: pointer;
+      color: white;
+      background-color: #444857;
+      padding: .3rem .5rem;
+      border: none;
+      border-radius: .2rem;
+      margin-right: .4rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(0px);
+
+    }
+
+    .row-2 .btn:hover {
+      background-color: #5a5f73;
+    }
+
+    .row-2 .btn:active {
+      transform: translateY(1px);
+    }
+
+
+    svg {
+      width: .8rem;
+      height: .8rem;
+      display: inline-block;
+      fill: #fefefa;
+    }
+
+    .row-2 svg {
+      margin-right: .2rem;
+    }
+
+
+    body {
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      //background-color: #1e1e1e;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 20px;
+      // color: #ffffff;
+    }
+
+    //   .card p {
+    //     font-size: 14px;
+    //   }
+
+    .card button {
+      background-color: #16a085;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 10px;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: #16a085;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
