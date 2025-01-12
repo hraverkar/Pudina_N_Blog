@@ -7,16 +7,15 @@
     <div class="card-container">
         <div class="card">
             <h3>UUID Generator</h3>
+
             <form class="example-form">
                 <mat-form-field class="example-full-width">
-                    <div class="input-with-icon">
-                        <input matInput readonly [value]="uuidValue" />
-                        <button class="copy-icon" (click)="copyToClipboard()" aria-label="Copy">
-                            <mat-icon>content_copy</mat-icon>
-                        </button>
-                    </div>
+                  <div class="input-with-icon">
+                    <input matInput readonly [value]="uuidValue" />
+                  </div>
                 </mat-form-field>
-            </form>
+              </form>
+              
             <div class="buttons-container">
                 <button matRipple mat-raised-button class="left-button"
                     (click)="copyToClipboard()">{{copyButtonName}}</button>
