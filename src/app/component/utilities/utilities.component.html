@@ -5,12 +5,12 @@
 </h1>
 <!-- GIthub contribution Section -->
 <div class="contributation-margin">
-    <div class="card-container">
+    <div class="card-container" *ngFor="let toolInformation of utilitiesInformation.uitilitiesToolsInformation">
         <div class="card">
-            <h3>UUID Generator</h3>
-            <p>Generate random UUIDs. Useful for creating unique identifiers for various applications such as database
-                keys, session IDs, and more.</p>
-            <button (click)="navigateTo('utilities/uuid-generator')">Try It</button>
+            <h3>{{toolInformation.utilities_title}}</h3>
+            <p>{{toolInformation.utilities_description}}</p>
+            <button
+                (click)="navigateTo(toolInformation.utilities_url)">{{toolInformation.utilities_buttonName}}</button>
         </div>
     </div>
 </div>

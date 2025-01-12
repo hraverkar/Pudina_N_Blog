@@ -3,13 +3,13 @@ import { HelperService } from '../../services/helper.service';
 import { AboutComponent } from '../../component/about/about.component';
 import { ContributionService } from '../../services/contribution.service';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { IbasicInforamtion } from '../../interface/ibasic-inforamtion';
 import { IUtilitiesInformation } from '../../interface/iutilities-information';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-utilities',
   standalone: true,
-  imports: [AboutComponent],
+  imports: [CommonModule, AboutComponent],
   templateUrl: './utilities.component.html',
   styleUrl: './utilities.component.scss',
 })

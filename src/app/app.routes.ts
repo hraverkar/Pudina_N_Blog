@@ -4,9 +4,9 @@ import { ResumeComponent } from './component/resume/resume.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
 import { HomeComponent } from './component/home/home.component';
 import { PostsComponent } from './component/posts/posts.component';
-import { ProjectComponent } from './components/project/project.component';
-import { UtilitiesComponent } from './components/utilities/utilities.component';
-import { GuidGenerationComponent } from './components/utilities/guid-generation/guid-generation.component';
+import { ProjectComponent } from './component/project/project.component';
+import { UtilitiesComponent } from './component/utilities/utilities.component';
+import { GuidGenerationComponent } from './component/guid-generation/guid-generation.component';
 
 export const routes: Routes = [
   {
