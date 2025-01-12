@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { Observable } from 'rxjs';
 import { IbasicInforamtion } from '../interface/ibasic-inforamtion';
+import { IUtilitiesInformation } from '../interface/iUtilities-information';
 
 @Injectable({
   providedIn: 'root',
@@ -28,5 +29,8 @@ export class ContributionService {
     return this.httpClient.get<IbasicInforamtion>("../../assets/JsonData/projectInformation.json");
   }
 
+  public readUtilitiesInformation(): Observable<IUtilitiesInformation> {
+    return this.httpClient.get<IUtilitiesInformation>("../../assets/JsonData/utilitiesInformation.json");
+  }
 
 }

@@ -5,11 +5,12 @@ import { Router } from '@angular/router';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
+import { HelperService } from '../../services/helper.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatTooltipModule, ThemeToggleComponent],
+  imports: [MatTooltipModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -22,7 +23,8 @@ export class HeaderComponent implements OnInit {
   public constructor(
     private basicInformationService: BasicInfoService,
     private router: Router,
-    private spinnerService: NgxSpinnerService
+    private spinnerService: NgxSpinnerService,
+    private helperService: HelperService
   ) {}
   public ngOnInit(): void {
     this.LoadbasicInformation();
@@ -54,20 +56,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public navigateTo(value: string): void {
-    switch (value) {
-      case 'resume':
-        this.router.navigate(['/resume']);
-        break;
-      case 'blog':
-        this.router.navigate(['/blog']);
-        break;
-      case 'home':
-        this.router.navigate(['/home']);
-        break;
-      case 'project':
-        this.router.navigate(['/project']);
-        break;
-    }
+    this.helperService.navigateTo(value);
   }
 
   //#endregion
