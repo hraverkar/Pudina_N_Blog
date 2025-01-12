@@ -4,7 +4,7 @@ import { AboutComponent } from '../../component/about/about.component';
 import { ContributionService } from '../../services/contribution.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { IbasicInforamtion } from '../../interface/ibasic-inforamtion';
-import { IUtilitiesInformation } from '../../interface/iUtilities-information';
+import { IUtilitiesInformation } from '../../interface/iutilities-information';
 
 @Component({
   selector: 'app-utilities',

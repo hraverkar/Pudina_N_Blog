@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { Observable } from 'rxjs';
 import { IbasicInforamtion } from '../interface/ibasic-inforamtion';
-import { IUtilitiesInformation } from '../interface/iUtilities-information';
+import { IUtilitiesInformation } from '../interface/iutilities-information';
 
 @Injectable({
   providedIn: 'root',

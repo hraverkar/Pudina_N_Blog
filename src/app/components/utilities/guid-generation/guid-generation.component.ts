@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AboutComponent } from '../../../component/about/about.component';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { IUtilitiesInformation } from '../../../interface/iUtilities-information';
+import { IUtilitiesInformation } from '../../../interface/iutilities-information';
 import { ContributionService } from '../../../services/contribution.service';
 import { HelperService } from '../../../services/helper.service';
 import { FormsModule } from '@angular/forms';
