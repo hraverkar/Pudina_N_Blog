@@ -1,7 +1,7 @@
 [build]
-  publish = "dist/my_blog/browser"
+publish = "dist/my_blog/browser"
 
 [[redirect]]
 from = "/*"
-to = "/index.html
-satus =200
+to = "/index.html"
+status = 200
