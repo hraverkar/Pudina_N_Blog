@@ -2,12 +2,19 @@
   "page_utilities_title": "Utilities",
   "page_utilities_subtitle": "Best Utilities tools",
   "page_guid_generator_title": "UUID Generator",
+  "page_hash_generator_title": "Hash Generator",
   "uitilitiesToolsInformation": [
     {
       "utilities_title": "UUID Generator",
       "utilities_description": "Generate random UUIDs. Useful for creating unique identifiers for various applications such as database keys, session IDs, and more.",
       "utilities_buttonName": "Try It",
       "utilities_url": "utilities/uuid-generator"
+    },
+    {
+      "utilities_title": "Hash Generator",
+      "utilities_description": "Quickly generate secure hashes for your text using algorithms like SHA-256, SHA-512, MD5, and more. Ideal for password hashing, data integrity checks, and cryptographic applications.",
+      "utilities_buttonName": "Try It",
+      "utilities_url": "utilities/hash-generator"
     }
   ]
 }

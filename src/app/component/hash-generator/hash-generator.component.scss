@@ -57,16 +57,31 @@
 }
 
 .buttons-container {
-    display: flex;
     justify-content: space-between;
 }
 
 .left-button {
-    font-size: 12px; /* Smaller font size */
-    padding: 6px 12px; /* Reduced padding */
-    min-width: auto; /* Remove default Material button width */
-  }
+    font-size: 12px;
+    /* Smaller font size */
+    padding: 6px 12px;
+    /* Reduced padding */
+    min-width: auto;
+    /* Remove default Material button width */
+}
 
 .right-button {
     margin-left: 10px;
+}
+
+.form-container {
+    display: flex;
+    gap: 16px;
+    /* Space between fields */
+    align-items: center;
+    /* Align items vertically */
+}
+
+mat-form-field {
+    flex: 1;
+    /* Adjust width equally */
 }
