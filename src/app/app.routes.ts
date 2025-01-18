@@ -7,6 +7,7 @@ import { PostsComponent } from './component/posts/posts.component';
 import { ProjectComponent } from './component/project/project.component';
 import { UtilitiesComponent } from './component/utilities/utilities.component';
 import { GuidGenerationComponent } from './component/guid-generation/guid-generation.component';
+import { HashGeneratorComponent } from './component/hash-generator/hash-generator.component';
 
 export const routes: Routes = [
   {
@@ -45,5 +46,9 @@ export const routes: Routes = [
   {
     path: 'utilities/uuid-generator',
     component: GuidGenerationComponent,
+  },
+  {
+    path: 'utilities/hash-generator',
+    component: HashGeneratorComponent,
   },
 ];

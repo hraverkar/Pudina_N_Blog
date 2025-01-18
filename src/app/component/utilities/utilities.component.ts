@@ -19,9 +19,10 @@ export class UtilitiesComponent implements OnInit {
     private helperService: HelperService,
     private contributionsService: ContributionService,
     private spinnerService: NgxSpinnerService
-  ) {}
-  ngOnInit(): void {
+  ) {
     this.getResumeBasicDetails();
+  }
+  ngOnInit(): void {
   }
   public navigateTo(value: string): void {
     this.helperService.navigateTo(value);

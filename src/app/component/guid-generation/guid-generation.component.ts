@@ -42,9 +42,7 @@ export class GuidGenerationComponent {
     this.getResumeBasicDetails();
     this.generateNewID();
   }
-  public navigateTo(value: string): void {
-    this.helperService.navigateTo(value);
-  }
+
   private getResumeBasicDetails(): void {
     this.spinnerService.show();
     this.contributionsService

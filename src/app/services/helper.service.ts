@@ -27,6 +27,9 @@ export class HelperService {
       case 'utilities/uuid-generator':
         this.router.navigate(['/utilities/uuid-generator']);
         break;
+      case 'utilities/hash-generator':
+        this.router.navigate(['/utilities/hash-generator']);
+        break;
     }
   }
 }

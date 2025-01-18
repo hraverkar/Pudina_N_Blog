@@ -1,6 +1,6 @@
 <!-- Home Section -->
 <h3 class="page-title">
-    <div class="page-title__text">{{ utilitiesInformation?.page_guid_generator_title }}</div>
+    <div class="page-title__text">{{ utilitiesInformation?.page_utilities_title }}</div>
     <div class="page-title__subtitle">{{ utilitiesInformation?.page_utilities_subtitle }}</div>
 </h3>
 <div class="contributation-margin">
@@ -10,12 +10,12 @@
 
             <form class="example-form">
                 <mat-form-field class="example-full-width">
-                  <div class="input-with-icon">
-                    <input matInput readonly [value]="uuidValue" />
-                  </div>
+                    <div class="input-with-icon">
+                        <input matInput readonly [value]="uuidValue" />
+                    </div>
                 </mat-form-field>
-              </form>
-              
+            </form>
+
             <div class="buttons-container">
                 <button matRipple mat-raised-button class="left-button"
                     (click)="copyToClipboard()">{{copyButtonName}}</button>
