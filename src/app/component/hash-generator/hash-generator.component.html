@@ -9,7 +9,7 @@
             <form class="example-form">
                 <mat-form-field class="example-full-width">
                     <div class="input-with-icon">
-                        <textarea type="" matInput [(ngModel)]="inputValue" name="inputValue"
+                        <textarea matInput [(ngModel)]="inputValue" name="inputValue"
                             placeholder="Please enter your text"></textarea>
                     </div>
                 </mat-form-field>
@@ -29,6 +29,14 @@
                     </mat-select>
                 </mat-form-field>
             </div>
+
+            <form class="example-form" *ngIf="isSecretKeyRequired()">
+                <mat-form-field class="example-full-width">
+                    <div class="input-with-icon">
+                        <input matInput [(ngModel)]="secretKey" name="secretKey" placeholder="Secret Key (Optional)" />
+                    </div>
+                </mat-form-field>
+            </form>
 
             <div class="buttons-container">
                 <button matRipple mat-raised-button class="left-button"

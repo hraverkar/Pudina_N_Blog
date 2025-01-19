@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { Clipboard } from '@angular/cdk/clipboard';
 import { v4 as uuidv4 } from 'uuid';
 import { MatRippleModule } from '@angular/material/core';
+import { CryptoService } from '../../services/crypto.service';
 
 @Component({
   selector: 'app-guid-generation',
@@ -36,7 +37,8 @@ export class GuidGenerationComponent {
     private helperService: HelperService,
     private contributionsService: ContributionService,
     private spinnerService: NgxSpinnerService,
-    private clipboard: Clipboard
+    private clipboard: Clipboard,
+    private cryptoService: CryptoService
   ) {}
   ngOnInit(): void {
     this.getResumeBasicDetails();
@@ -56,7 +58,7 @@ export class GuidGenerationComponent {
   }
 
   public generateNewID() {
-    this.uuidValue = uuidv4();
+    this.uuidValue = this.cryptoService.GenerateNewID();
   }
 
   public copyToClipboard() {
