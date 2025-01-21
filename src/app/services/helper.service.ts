@@ -30,6 +30,8 @@ export class HelperService {
       case 'utilities/hash-generator':
         this.router.navigate(['/utilities/hash-generator']);
         break;
+      case 'utilities/word-counter':
+        this.router.navigate(['/utilities/word-counter']);
     }
   }
 }

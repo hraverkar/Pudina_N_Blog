@@ -93,4 +93,8 @@ export class HashGeneratorComponent implements OnInit {
         console.error('Could not copy text: ', err);
       });
   }
+
+  public isSecretKeyRequired(): boolean {
+    return ['pbkdf2', 'hmac-sha256', 'hmac-sha512'].includes(this.selectedAlgo);
+  }
 }

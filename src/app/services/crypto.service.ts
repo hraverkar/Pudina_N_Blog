@@ -8,11 +8,13 @@ import {
   SHA256,
   SHA512,
 } from 'crypto-js';
+import { v4 as uuidv4 } from 'uuid';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CryptoService {
+  secretValue: string;
   constructor() {}
   public GenerateHashBtn1(
     algorithem: string,
@@ -20,10 +22,15 @@ export class CryptoService {
     inputValue: string,
     secretKey?: string
   ): string {
+    if (secretKey !== undefined && secretKey.length > 0) {
+      this.secretValue = secretKey;
+    } else {
+      this.secretValue = this.GenerateNewID();
+    }
     if (typeof inputValue !== 'string' || inputValue.trim() === '') {
       throw new Error('Data must be a non-empty string');
     }
-    if (algorithem.startsWith('hmac') && !secretKey) {
+    if (algorithem.startsWith('hmac') && !this.secretValue) {
       throw new Error('Secret key must be provided for HMAC algorighms');
     }
     const encoding =
@@ -38,9 +45,9 @@ export class CryptoService {
       if (algorithem.startsWith('hmac')) {
         const hmacAlgorithm = algorithem.replace('hmac-', '').toUpperCase();
         if (hmacAlgorithm === 'SHA256') {
-          hash = HmacSHA256(inputValue, secretKey);
+          hash = HmacSHA256(inputValue, this.secretValue);
         } else if (hmacAlgorithm === 'SHA512') {
-          hash = HmacSHA512(inputValue, secretKey);
+          hash = HmacSHA512(inputValue, this.secretValue);
         } else {
           throw new Error(`Unsupported HMAC algorithm: ${algorithem}`);
         }
@@ -56,10 +63,10 @@ export class CryptoService {
             hash = MD5(inputValue);
             break;
           case 'pbkdf2':
-            if (!secretKey) {
+            if (!this.secretValue) {
               throw new Error('Secret key is required for PBKDF2');
             }
-            hash = PBKDF2(inputValue, secretKey, {
+            hash = PBKDF2(inputValue, this.secretValue, {
               keySize: 256 / 32,
             });
             break;
@@ -75,5 +82,9 @@ export class CryptoService {
         }`
       );
     }
+  }
+
+  public GenerateNewID(): string {
+    return uuidv4();
   }
 }
