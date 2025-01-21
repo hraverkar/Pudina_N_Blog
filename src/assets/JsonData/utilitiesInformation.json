@@ -15,6 +15,11 @@
       "utilities_description": "Quickly generate secure hashes for your text using algorithms like SHA-256, SHA-512, MD5, and more. Ideal for password hashing, data integrity checks, and cryptographic applications.",
       "utilities_buttonName": "Try It",
       "utilities_url": "utilities/hash-generator"
+    },    {
+      "utilities_title": "Word Counter",
+      "utilities_description": "This utility project help you to get the count of character and word in given paragraph",
+      "utilities_buttonName": "Try It",
+      "utilities_url": "utilities/word-counter"
     }
   ]
 }
