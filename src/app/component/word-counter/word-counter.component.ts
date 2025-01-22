@@ -38,14 +38,7 @@ export class WordCounterComponent {
     private contributionsService: ContributionService,
     private spinnerService: NgxSpinnerService,
     private fb: FormBuilder
-  ) {
-    this.buildForm();
-  }
-  buildForm() {
-    this.myForm = this.fb.group({
-      twoWayControl: [''],
-    });
-  }
+  ) {}
   public ngOnInit(): void {
     this.getResumeBasicDetails();
   }
@@ -60,5 +53,18 @@ export class WordCounterComponent {
         }
         this.spinnerService.hide();
       });
+  }
+  inputText: string = '';
+  characterCount: number = 0;
+  wordCount: number = 0;
+
+  updateCounts(): void {
+    this.characterCount = this.inputText.length;
+
+    // Split the text by spaces and filter out empty strings to handle multiple spaces
+    this.wordCount =
+      this.inputText.trim().length > 0
+        ? this.inputText.trim().split(/\s+/).length
+        : 0;
   }
 }
