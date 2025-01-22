@@ -3,5 +3,5 @@
 
 [[redirect]]
 from = "/*"
-to = "/index.html
+to = "/index.html"
 satus =200
