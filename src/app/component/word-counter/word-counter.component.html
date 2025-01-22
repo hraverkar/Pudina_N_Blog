@@ -1,4 +1,3 @@
-<p>word-counter works!</p>
 <h3 class="page-title">
     <div class="page-title__text">{{ utilitiesInformation?.page_utilities_title }}</div>
     <div class="page-title__subtitle">{{ utilitiesInformation?.page_utilities_subtitle }}</div>
@@ -7,17 +6,23 @@
     <div class="card-container">
         <div class="card">
             <h3>Word & Character Counter</h3>
-            <form class="example-form" [formGroup]="myForm">
+            <form class="example-form">
                 <mat-form-field class="example-full-width">
                     <div class="input-with-icon">
-                        <textarea matInput placeholder="" #myInput formControlName="twoWayControl" style="height: 220px;"></textarea>
+                        <!-- <textarea matInput placeholder="" #myInput formControlName="twoWayControl"
+                            style="height: 220px;"></textarea> -->
+
+                        <textarea matInput id="myInput" [(ngModel)]="inputText" (input)="updateCounts()" name="myInput"
+                            placeholder="Type something here..." style="height: 220px;"></textarea>
                     </div>
                 </mat-form-field>
             </form>
 
             <br />
             <label class="nopadding clrlbl">
-                Characters Count: {{ myInput.value.length }}</label>
+                Character Count: {{ characterCount }} | 
+                Word Count: {{ wordCount }}
+            </label>
         </div>
     </div>
 </div>
