@@ -20,6 +20,12 @@
       "utilities_description": "This utility project help you to get the count of character and word in given paragraph",
       "utilities_buttonName": "Try It",
       "utilities_url": "utilities/word-counter"
+    },
+    {
+      "utilities_title": "JSON to YAML Converter",
+      "utilities_description": "This utility project help you to convert JSON to YAML",
+      "utilities_buttonName": "Try It",
+      "utilities_url": "utilities/json-yml-converter"
     }
   ]
 }

@@ -9,6 +9,7 @@ import { UtilitiesComponent } from './component/utilities/utilities.component';
 import { GuidGenerationComponent } from './component/guid-generation/guid-generation.component';
 import { HashGeneratorComponent } from './component/hash-generator/hash-generator.component';
 import { WordCounterComponent } from './component/word-counter/word-counter.component';
+import { JsonYmlConverterComponent } from './component/json-yml-converter/json-yml-converter.component';
 
 export const routes: Routes = [
   {
@@ -51,8 +52,13 @@ export const routes: Routes = [
   {
     path: 'utilities/hash-generator',
     component: HashGeneratorComponent,
-  },{
+  },
+  {
     path: 'utilities/word-counter',
-    component: WordCounterComponent
-  }
+    component: WordCounterComponent,
+  },
+  {
+    path: 'utilities/json-yml-converter',
+    component: JsonYmlConverterComponent,
+  },
 ];
