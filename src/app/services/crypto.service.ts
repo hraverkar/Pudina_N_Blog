@@ -9,7 +9,7 @@ import {
   SHA512,
 } from 'crypto-js';
 import { v4 as uuidv4 } from 'uuid';
-
+import * as yaml from 'js-yaml';
 @Injectable({
   providedIn: 'root',
 })
@@ -87,4 +87,14 @@ export class CryptoService {
   public GenerateNewID(): string {
     return uuidv4();
   }
+  
+  public convertToYaml(jsonObject: Record<string, any>): string {
+    try {
+      return yaml.dump(jsonObject);
+    } catch (error) {
+      console.error('Error converting JSON to YAML:', error);
+      throw error;
+    }
+  }
+  
 }

@@ -32,6 +32,10 @@ export class HelperService {
         break;
       case 'utilities/word-counter':
         this.router.navigate(['/utilities/word-counter']);
+        break;
+      case 'utilities/json-yml-converter':
+        this.router.navigate(['/utilities/json-yml-converter']);
+        break;
     }
   }
 }
