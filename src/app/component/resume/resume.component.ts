@@ -59,5 +59,39 @@ export class ResumeComponent implements OnInit {
         this.spinnerService.hide();
       });
   }
+
+  public onGitLanBrunoClick() {
+    this.spinnerService.show();
+    const filePath = this.resumeBasicInformation.gitlabFilePath;
+    this.basicInfoService.downloadFile(filePath).subscribe((data: Blob) => {
+      const blob = new Blob([data], { type: 'application/octet-stream' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'gitlab_bruno_collection.json'; // Specify the filename
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+      this.spinnerService.hide();
+    });
+  }
+
+  public onAzureBrunoClick() {
+    this.spinnerService.show();
+    const filePath = this.resumeBasicInformation.azureFilePath;
+    this.basicInfoService.downloadFile(filePath).subscribe((data: Blob) => {
+      const blob = new Blob([data], { type: 'application/octet-stream' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Azure_Bruno_Collection.json'; // Specify the filename
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+      this.spinnerService.hide();
+    });
+  }
   //#endregion
 }

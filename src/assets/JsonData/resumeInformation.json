@@ -3,6 +3,8 @@
   "page_subTitle": "An Awesome person :)",
   "donwloadResume": "Download Awesome Resume",
   "resumeFilePath": "../../assets/Pdf/Harshal_Raverkar_AVP-SSE_8Years.pdf",
+  "gitlabFilePath": "../../assets/JsonData/Gitlab.json",
+  "azureFilePath": "../../assets/JsonData/Azure_DevOps_REST_API_v7.3.json",
   "workExperience": "Work Experience",
   "previousExperience": "Previous Experience",
   "skills": "Skills",

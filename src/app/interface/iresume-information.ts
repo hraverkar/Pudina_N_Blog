@@ -3,6 +3,8 @@ export interface IResumeInformation {
   page_subTitle: string;
   donwloadResume: string;
   resumeFilePath: string;
+  gitlabFilePath: string;
+  azureFilePath: string;
   workExperience: string;
   previousExperience: string;
   currentCompany: ICurrentCompany[];
